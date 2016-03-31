@@ -1,0 +1,174 @@
+*{
+    /* Universal reset: */
+    margin:0;
+    padding:0;
+}
+body {
+    width: 1113px;
+    background: -webkit-linear-gradient(left, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+    margin: 15px auto;
+    border: 1px solid black; }
+
+h1, h3 {
+    font-family: cursive;
+    text-align: center
+}
+
+h2 { 
+    font-family: cursive;
+    padding: 0.25em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+ul {
+    padding-left: 24px;
+    margin: 0;
+}
+
+ul li {
+
+
+}
+
+header { 
+    height: 220px;		
+}
+
+#title{
+    font-family: cursive;
+    text-align: center;
+    font-size: 500%;
+    position: relative;
+    bottom: 2.7em;
+    left: 1em;
+}
+
+#subtitle{
+    font-family: cursive;
+    position: relative;
+    bottom: 13em;
+
+}
+/* CSS for operation of the menus */
+#nav_menu ul{
+    list-style-type: none;
+    position: relative; /* so the submenus can be positioned */
+}
+
+#nav_menu ul li{float:left;}
+
+#nav_menu ul ul{
+    display: none; /* dont display submenu until hover of li */
+    position: absolute;
+    top: 100%;
+}
+
+#nav_menu ul ul li{
+    float: none;
+    position: relative;
+}
+
+#nav_menu ul ul li ul{
+    position: absolute;
+    left: 100%; /* display submenu to the right of the li element */
+    top: 0; /* display submenu at the top of the li element */
+}
+
+#nav_menu ul li:hover >ul {
+    display: block;
+    z-index:9999;
+}
+
+#nav_menu > ul::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* CSS for formatting */
+
+#nav_menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+#nav_menu ul li a{
+    text-align: center;
+    display: block;
+    width: 278px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus{
+    background-color: gray;
+}
+
+#sidebarA {
+    position: relative;
+    height: 710px;
+    width: 180px;
+    float: left;
+    border-right: 2px solid black;
+}
+
+#sidebarA figure{
+    position: relative;
+    right: 2em;
+}
+
+#sidebarA figcaption{
+    font-family: cursive;
+    text-align: center;
+    font-weight: bold;
+}
+
+#sidebarA ul li{
+    list-style: none;
+}	
+main {
+    position: relative;
+    width: 600px; 
+    float: left; }
+
+main p{
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: cursive;
+}
+
+#home_image {
+    height: 15em;
+    width: 23em;
+}
+
+#sidebarB {
+    position: relative;
+    height: 710px;
+    width: 180px;        
+    float: right;
+    border-left: 2px solid black; }
+
+#sidebarB li {
+    list-style: none;
+    padding: 1em;
+}	
+
+#sidebarB a{
+    color: black;
+    font-family: cursive;
+}
+
+footer {
+    clear: both;
+    border-top: 2px solid black; }
+
+footer h2{
+    font-family: cursive;
+    font-size:medium;
+}	
+

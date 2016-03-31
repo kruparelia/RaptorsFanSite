@@ -1,0 +1,23 @@
+*{
+    /* Universal reset: */
+    margin:0;
+    padding:0;
+}
+#sidebarA{
+    height: 1193px}
+
+#sidebarB{
+    height: 1193px}
+
+article figure iframe{
+    border: 5px solid black;
+    padding: .25em;
+}
+
+article figure figcaption{
+    font-family: cursive;
+}
+
+aside p{
+    font-family: cursive;
+}

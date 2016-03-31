@@ -1,0 +1,32 @@
+*{
+    /* Universal reset: */
+    margin:0;
+    padding:0;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: relative;
+}
+
+th,td{
+    border: 1px solid black;
+    padding: .2em .7em;
+    text-align: right;
+}
+
+th.left, td.left{
+    text-align: left;
+}
+
+
+thead, tfoot{font-weight: bold;}
+
+#sidebarB {
+    position: relative;
+    height: 710px;
+    width: 180px;
+    float: right;
+    border-left: 2px solid black;
+    left: 5px;
+}
